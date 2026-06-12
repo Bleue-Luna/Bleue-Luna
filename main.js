@@ -42,3 +42,25 @@ if (folderProjects) {
         window.location.href = 'projetos.html';
     });
 }
+const iconLinks = document.getElementById('icon-links');
+
+if (iconLinks) {
+    iconLinks.addEventListener('click', () => {
+        window.location.href = 'links.html';
+    });
+}
+
+const iconTrash = document.getElementById('icon-trash');
+
+if (iconTrash) {
+    iconTrash.addEventListener('click', () => {
+        // 1. Adiciona a classe que faz a animação acontecer
+        iconTrash.classList.add('shake');
+        
+        // 2. Espera 300 milissegundos (o tempo exato da nossa animação no CSS) 
+        // e remove a classe para que a lixeira possa tremer de novo no próximo clique!
+        setTimeout(() => {
+            iconTrash.classList.remove('shake');
+        }, 300);
+    });
+}
