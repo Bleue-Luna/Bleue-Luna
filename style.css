@@ -25,7 +25,7 @@ body {
     mask-image: linear-gradient(to bottom, transparent 0%, black 60%);
 }
 
-/*3. NUVENS*/
+/*NUVENS*/
 .clouds-layer {
     position: absolute;
     top: -5%;
@@ -68,27 +68,30 @@ body {
     width: 45px; 
 }
 
-/*TÍTULO SUPERIOR */
-.top-title {
+/*Título*/
+.top-title{
     position: absolute;
-    top: 20px;
+    top: 90px;
     left: 30px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: white;
     z-index: 10;
 }
-
 .top-title img {
-    width: 420px;
+    position: absolute;
+    width: 380px; 
+    top: -60px;   
+    left: -20px;  
+    z-index: 1;
 }
-
 .top-title h1 {
-    font-size: 28px;
+    position: absolute;
+    font-size: 150px;
     margin: 0;
-    text-shadow: 3px 3px 0px rgba(0,0,0,0.8);
-    letter-spacing: 2px;
+    letter-spacing: -1px;
+    line-height: 0.9;
+    z-index: 2;
+    left: 100px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 /*ÍCONES*/
@@ -174,9 +177,7 @@ body {
     box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
 }
 
-/* ================================
-   7. ESTILOS DA JANELA RETRÔ (Inalterados)
-   ================================ */
+/*JANELA*/
 .window-container {
     position: absolute;
     top: 50%;
@@ -188,7 +189,7 @@ body {
     border: 2px solid;
     border-color: #dfdfdf #000000 #000000 #dfdfdf; 
     box-shadow: 5px 5px 0px rgba(0,0,0,0.5);
-    z-index: 100; /* A janela fica abaixo dos ícones (101) */
+    z-index: 102;
 }
 
 .window-header {
